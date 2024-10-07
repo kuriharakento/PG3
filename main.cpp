@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int Recursive(int n, int wage) {
-	// ベースケース: 1時間目の時給を返す
+	//時給を返す
 	if (n == 1) {
 		return wage;
 	}
-	// 再帰ステップ: 前の時間の時給を計算し、それを基に次の時給を計算
+	//前の時間の時給を計算し、それを基に次の時給を計算
 	return Recursive(n - 1, wage * 2 - 50);
 }
 
