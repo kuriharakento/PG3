@@ -20,6 +20,8 @@ int main()
 	int generalWageStructure;
 	//再帰的な資金体系
 	int recursiveWageStructure;
+
+	int sum = 0;
 	
 	for(int hour = 1; hour <= 10;hour++)
 	{
@@ -29,7 +31,12 @@ int main()
 		printf("一般的な資金体系：%d\n", generalWageStructure);
 		//再帰的な資金体系の計算
 		recursiveWageStructure = Recursive(hour, recursiveWage);
-		printf("再帰的な資金体系：%d\n\n", recursiveWageStructure);
+		sum += recursiveWageStructure;
+		printf("再帰的な資金体系：%d\n", recursiveWageStructure);
+
+		printf("一般的な賃金体系の給料: %d\n",generalWageStructure);
+		printf("再帰的な賃金体系の給料: %d\n\n\n",sum);
+
 	}
 	
 
