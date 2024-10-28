@@ -10,6 +10,8 @@ int main()
 	Enemy enemy;
 	enemy.Initialize();
 
+	/*-------[ メインループ ]-------*/
+
 	while (enemy.IsAlive())
 	{
 		enemy.Update();
