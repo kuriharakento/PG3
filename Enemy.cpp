@@ -19,19 +19,19 @@ void Enemy::Update()
 
 void Enemy::Approach()
 {
-	printf_s("接近中\n");
+	printf_s("接近\n");
 	phase = Phase::Shoot;
 }
 
 void Enemy::Shoot()
 {
-	printf_s("攻撃中\n");
+	printf_s("攻撃\n");
 	phase = Phase::Leave;
 }
 
 void Enemy::Leave()
 {
-	printf_s("離脱しようとしたが死亡した\n");
+	printf_s("離脱\n");
 	isAlive = false;
 	phase = Phase::Leave;
 }
