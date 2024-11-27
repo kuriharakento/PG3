@@ -1,6 +1,6 @@
 #include <iostream>
 #include <list>
-#include <cstring> // strcmpを使うためのヘッダー
+#include <cstring>
 
 void PrintStationList(const std::list<const char*>& stationList, const char* year) {
     std::cout << year << " Station List:" << std::endl;
@@ -11,7 +11,7 @@ void PrintStationList(const std::list<const char*>& stationList, const char* yea
 }
 
 int main() {
-    // 駅名リスト（1970年時点, 英語表記）
+    //1970年時点
     std::list<const char*> stationList1970 = {
         "Tokyo", "Kanda", "Akihabara", "Okachimachi", "Ueno", "Uguisudani",
         "Nippori", "Tabata", "Komagome", "Sugamo", "Otsuka", "Ikebukuro",
@@ -20,7 +20,7 @@ int main() {
         "Shinagawa", "Tamachi", "Hamamatsucho", "Shimbashi", "Yurakucho"
     };
 
-    // 1970年のリストを基に2019年のリストを作成（Nishi-Nipporiを追加）
+    //2019年
     std::list<const char*> stationList2019 = stationList1970;
     auto it = stationList2019.begin();
     while (it != stationList2019.end()) {
@@ -31,7 +31,7 @@ int main() {
         ++it;
     }
 
-    // 2019年のリストを基に2022年のリストを作成（Takanawa Gatewayを追加）
+    //2022年
     std::list<const char*> stationList2022 = stationList2019;
     it = stationList2022.begin();
     while (it != stationList2022.end()) {
