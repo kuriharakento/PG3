@@ -13,17 +13,20 @@ void Result(int dice, int select)
 		if (select == 0)
 		{
 			printf("おめでとう！！当たりだよ！！\n");
-		} else
+		}
+		else
 		{
 			printf("残念！！不正解だよ！！\n");
 		}
-	} else
+	}
+	else
 	{
 		printf("サイコロの結果は....半です！！\n");
 		if (select == 1)
 		{
 			printf("おめでとう！！正解だよ！！\n");
-		} else
+		}
+		else
 		{
 			printf("残念！！不正解だよ！！\n");
 		}
